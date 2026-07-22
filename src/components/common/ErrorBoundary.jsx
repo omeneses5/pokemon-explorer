@@ -10,10 +10,6 @@ export default class ErrorBoundary extends Component {
     return { hasError: true };
   }
 
-  componentDidCatch(error, errorInfo) {
-    console.error('ErrorBoundary capturó un error:', error, errorInfo);
-  }
-
   handleReset = () => {
     window.location.reload();
   };
